@@ -14,11 +14,11 @@
        "metadata": {
            "description": "Your source public IP address. Added to the inbound NSG on eth0 (MGMT), to restrict access to the deployment."
        },
-       "defaultValue": "0.0.0.0/0"
+       "defaultValue": "208.18.15.0/24, 136.37.27.3/32 "
     },
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "vnet-FW",
+      "defaultValue": "vnet-westus-sandbox-transit",
       "metadata": {
         "description": "Virtual Network Name"
       }
@@ -36,7 +36,7 @@
     },
     "virtualNetworkAddressPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/16",
+      "defaultValue": "10.73.120.0/22",
       "metadata": {
         "description": "CIDR for Virtual Network"
       }
@@ -50,7 +50,7 @@
     },
     "mgmtSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/24",
+      "defaultValue": "10.73.120.0/28",
       "metadata": {
         "description": "CIDR for Management Network"
       }
@@ -64,7 +64,7 @@
     },
     "untrustedSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.1.0/24",
+      "defaultValue": "10.73.120.16/28",
       "metadata": {
         "description": "CIDR for Untrusted Network"
       }
@@ -78,14 +78,14 @@
     },
     "trustedSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.2.0/24",
+      "defaultValue": "10.73.120.32/28",
       "metadata": {
         "description": "CIDR for Trusted Network"
       }
     },
     "appGatewayName": {
       "type": "string",
-      "defaultValue": "myAppGw",
+      "defaultValue": "appgw-westus-sandbox",
       "metadata": {
         "description": "App Gateway name - used to identify resource in Azure portal"
       }
@@ -105,14 +105,14 @@
     },
     "appGatewaySubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.3.0/24",
+      "defaultValue": "10.73.120.48/28",
       "metadata": {
         "description": "CIDR for App Gateway"
       }
     },
     "internalLoadBalancerName": {
       "type": "string",
-      "defaultValue": "myPrivateLB",
+      "defaultValue": "lb-westus-sandbox-internal",
       "metadata": {
         "description": "Internal Load Balancer name - used to identify resource in Azure portal"
       }
@@ -126,7 +126,7 @@
     },
     "backendSubnetPrefix": {
       "type": "string",
-      "defaultValue": "192.168.4.0/24",
+      "defaultValue": "10.73.120.64/28",
       "metadata": {
         "description": "CIDR for Backend WWW Network"
       }

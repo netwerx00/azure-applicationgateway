@@ -3,25 +3,31 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "networkSecurityGroupInboundSrcIP": {
-      "value": "0.0.0.0/0"
+      "value": "208.18.15.0/24, 136.37.27.3/32 "
     },
     "virtualNetworkAddressPrefix": {
-      "value": "192.168.0.0/16"
+      "value": "10.73.120.0/22"
     },
     "virtualNetworkNewOrExisting": {
-      "value": "existing"
+      "value": "new"
     },
     "username": {
-      "value": "DEFAULT-USER"
+      "value": "lockkcadmin"
     },
     "password": {
-      "value": "DEFAULT-PASSWORD"
+      "value": "P@radis3105t"
     },
     "storageAccountName": {
-      "value": "DEFAULT-STORAGE"
+      "value": "palobootstrap"
     },
     "storageAccountNewOrExisting": {
-      "value": "existing"
+      "value": "new"
+    },
+    "appGatewayDnsName": {
+      "value": "appgwwestussdbx" 
+    },
+    "MgmtPublicIPAddressName": {
+      "value": "pip-westus-sdbx-palo-mgmt" 
     }
   }
 }
