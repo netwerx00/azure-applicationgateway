@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "networkSecurityGroupInboundSrcIP": {
-      "value": "208.18.15.0/24, 136.37.27.3/32 "
+      "value": "208.18.15.0/24"
     },
     "virtualNetworkAddressPrefix": {
       "value": "10.73.120.0/22"
